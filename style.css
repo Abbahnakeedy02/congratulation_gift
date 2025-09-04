@@ -110,7 +110,14 @@
       height: auto;
       animation: rotateAndScale 3s infinite ease-in-out;
   }
-
+@media (max-width: 920px) {
+.love-photos-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 40%;
+    margin-top: 3em;
+    margin: 10px;
+  }
+}
   /* Full-screen cover photo */
   #cover-photo-overlay {
       position: fixed;
